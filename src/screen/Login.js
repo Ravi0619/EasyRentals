@@ -15,12 +15,13 @@ export default class Login extends Component {
     
     onSignIn=()=>{
        
-        alert(`email=${this.state.email} & Password=${this.state.Password }`)
+        // alert(`email=${this.state.email} & Password=${this.state.Password }`)
+        this.props.navigation.navigate('Signup')
    }
     render() {
-        
         return (
-            
+        
+        
             <View style={{flex:1 ,backgroundColor:'white'}}>
                  <View style={{flexDirection:'row',marginHorizontal:35,marginVertical:65,marginBottom:30}}>
                      <Text style={{fontSize:22,fontWeight:'bold',opacity: .8,}}>Sign In</Text>
@@ -110,6 +111,8 @@ export default class Login extends Component {
                     </View>
                 </View>
             </View>
+        
+            
         )
     }
 }
